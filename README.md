@@ -47,7 +47,7 @@ End-to-end machine learning workflow system.
 - Exploring evaluation workflows and model improvement loops
 - Serving as a foundation for future LLM-oriented systems work
 
-### ⚡ ML Inference Scheduling & Serving System *(WIP)*
+### ML Inference Scheduling & Serving System *(WIP)*
 Lightweight ML system for managing inference requests, scheduling, and batching.
 
 - Designed scheduling strategies for model inference under varying workloads  
