@@ -8,10 +8,6 @@
   Third-year Computer Science, Mathematics &amp; Statistics student at the University of Toronto
 </p>
 
-<p align="center">
-  ML Systems • Backend • Exploring LLM Post-training
-</p>
-
 ---
 
 ## About
