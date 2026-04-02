@@ -83,8 +83,8 @@ Early exploration of post-training techniques for language models.
 ## Stats
 
 <p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=LL333111&show_icons=true&hide_border=true&title_color=111827&icon_color=2563EB&text_color=374151&bg_color=ffffff" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LL333111&layout=compact&hide_border=true&title_color=111827&text_color=374151&bg_color=ffffff" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=LL333111&show_icons=true&cache_seconds=86400" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LL333111&layout=compact&cache_seconds=86400" />
 </p>
 
 ---
