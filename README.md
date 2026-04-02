@@ -1,7 +1,7 @@
 <h1 align="center">Hi, I'm Lucas Liu</h1>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Inter&weight=600&size=24&duration=3000&pause=1000&color=2563EB&center=true&vCenter=true&width=700&lines=ML+Systems;LLM+Post-training;Building+Reliable+ML+Workflows" />
+  <img src="https://komarev.com/ghpvc/?username=LL333111&label=Profile%20views&color=2563EB&style=for-the-badge" />
 </p>
 
 <p align="center">
