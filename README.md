@@ -6,6 +6,7 @@
   </a>
   <img src="https://komarev.com/ghpvc/?username=LL333111&label=Profile%20views&color=0077B5&style=for-the-badge" />
 </p>
+<img src="https://readme-typing-svg.herokuapp.com/?lines=ML+Systems;LLM+Post-training;Building+Scalable+ML+Workflows&size=25" />
 
 🎓 Third-year Computer Science, Mathematics & Statistics student @ University of Toronto                                        
 💻 ML Systems                                          
