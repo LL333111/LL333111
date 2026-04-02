@@ -1,0 +1,39 @@
+<svg width="800" height="106" viewBox="0 0 800 106" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.m{font-family:'Courier New',Courier,monospace;}
+.cur{animation:cb .75s steps(1) infinite;}
+@keyframes cb{0%,100%{opacity:1;}50%{opacity:0;}}
+.tm1{animation:s1 2.0s steps(42,end) 0.4s both;}
+@keyframes s1{from{width:780px;}to{width:0;}}
+.tm2{animation:s2 2.2s steps(46,end) 2.5s both;}
+@keyframes s2{from{width:780px;}to{width:0;}}
+.tm3{animation:s3 1.8s steps(38,end) 4.8s both;}
+@keyframes s3{from{width:780px;}to{width:0;}}
+.cur{opacity:0;animation:show .1s ease 0.3s forwards, cb .75s steps(1) 0.4s infinite;}
+@keyframes show{to{opacity:1;}}
+</style>
+</defs>
+<rect width="800" height="106" fill="#ffffff"/>
+<rect x="0" y="10" width="790" height="92" fill="#ffffff" stroke="#dbeafe" stroke-width="1"/>
+<rect x="12" y="3" width="72" height="14" fill="#ffffff"/>
+<text x="15" y="13" class="m" font-size="9" fill="#93c5fd" letter-spacing="2">ABOUT.TXT</text>
+
+<!-- Line 1: "I build " + "ML systems" highlighted + rest -->
+<text x="16" y="36" class="m" font-size="12" fill="#334155">I build </text>
+<text x="73" y="36" class="m" font-size="12" fill="#2563eb" font-weight="bold">ML systems</text>
+<text x="172" y="36" class="m" font-size="12" fill="#334155"> with a background in applied ML and backend development —</text>
+<rect x="16" y="18" height="22" fill="#ffffff" class="tm1"/>
+
+<!-- Line 2 -->
+<text x="16" y="58" class="m" font-size="12" fill="#334155">increasingly drawn to how models are trained, evaluated, and improved in practice.</text>
+<rect x="16" y="40" height="22" fill="#ffffff" class="tm2"/>
+
+<!-- Line 3: "Currently exploring " + highlighted -->
+<text x="16" y="80" class="m" font-size="12" fill="#334155">Currently exploring </text>
+<text x="186" y="80" class="m" font-size="12" fill="#2563eb" font-weight="bold">LLM post-training, evaluation, and model optimization.</text>
+<rect x="16" y="62" height="22" fill="#ffffff" class="tm3"/>
+
+<!-- cursor sits right after end of line 3 text -->
+<rect x="16" y="82" width="2" height="14" fill="#2563eb" class="cur"/>
+</svg>
