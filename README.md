@@ -4,7 +4,7 @@
   <a href="https://www.linkedin.com/in/yuxuan-liu-6a83162a0/">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
-  <img src="https://komarev.com/ghpvc/?username=LL333111&label=Profile%20views&color=0e75b6&style=flat" />
+  <img src="https://komarev.com/ghpvc/?username=LL333111&label=Profile%20views&color=0077B5&style=for-the-badge" />
 </p>
 
 🎓 Third-year Computer Science, Mathematics & Statistics student @ University of Toronto                                        
