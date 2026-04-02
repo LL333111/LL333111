@@ -1,0 +1,208 @@
+<svg width="800" height="1090" viewBox="0 0 800 1090" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.m { font-family: 'Courier New', Courier, monospace; }
+.pulse { animation: pulse 1.4s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:.2;} }
+.show { animation: fi 0.5s ease 0.1s both; }
+@keyframes fi { from{opacity:0;} to{opacity:1;} }
+
+/* Mask moves RIGHT: starts at x=16 (covering text), slides to x=800 (off screen) */
+/* Line 1: 76 chars, ~1.9s */
+.m1 { animation: slide 1.9s linear 0.3s both; }
+/* Line 2: 82 chars, ~2.1s, starts after line 1 ends = 0.3+1.9 = 2.2s */
+.m2 { animation: slide 2.1s linear 2.2s both; }
+/* Line 3: 74 chars, ~1.9s, starts after line 2 ends = 2.2+2.1 = 4.3s */
+.m3 { animation: slide 1.9s linear 4.3s both; }
+
+@keyframes slide {
+  from { x: 16px; }
+  to   { x: 810px; }
+}
+</style>
+</defs>
+
+<rect width="800" height="1090" fill="#ffffff"/>
+
+<!-- HEADER -->
+<g class="show">
+  <rect x="0" y="24" width="192" height="22" fill="#dbeafe"/>
+  <rect x="0" y="24" width="5"   height="22" fill="#2563eb"/>
+  <text x="16" y="39" class="m" font-size="10" fill="#2563eb" letter-spacing="2.5">CS · MATH · STAT</text>
+
+  <rect x="566" y="22" width="224" height="26" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+  <circle cx="583" cy="35" r="4" fill="#2563eb" class="pulse"/>
+  <text x="595" y="39" class="m" font-size="10.5" fill="#1d4ed8" letter-spacing="0.3">open to opportunities</text>
+
+  <text x="0" y="90" class="m" font-size="44" fill="#0a0e1a" letter-spacing="-2" font-weight="bold">Lucas Liu</text>
+  <text x="2" y="116" class="m" font-size="12.5" fill="#64748b">University of Toronto  ·  third year</text>
+  <line x1="0" y1="134" x2="790" y2="134" stroke="#dbeafe" stroke-width="1"/>
+</g>
+
+<!-- ABOUT BOX -->
+<g class="show">
+  <rect x="0" y="146" width="790" height="92" fill="#ffffff" stroke="#dbeafe" stroke-width="1"/>
+  <rect x="12" y="139" width="72" height="14" fill="#ffffff"/>
+  <text x="15" y="150" class="m" font-size="9" fill="#93c5fd" letter-spacing="2">ABOUT.TXT</text>
+
+  <!-- Line 1 — no highlights, plain text -->
+  <text x="16" y="172" class="m" font-size="12" fill="#334155">I build ML systems with a background in applied ML and backend development —</text>
+  <rect y="152" width="794" height="24" fill="#ffffff" class="m1"/>
+
+  <!-- Line 2 -->
+  <text x="16" y="194" class="m" font-size="12" fill="#334155">increasingly drawn to how models are trained, evaluated, and improved in practice.</text>
+  <rect y="174" width="794" height="24" fill="#ffffff" class="m2"/>
+
+  <!-- Line 3 -->
+  <text x="16" y="216" class="m" font-size="12" fill="#334155">Currently exploring LLM post-training, evaluation, and model optimization.</text>
+  <rect y="196" width="794" height="24" fill="#ffffff" class="m3"/>
+</g>
+
+<!-- SELECTED WORK -->
+<g class="show">
+  <text x="0" y="268" class="m" font-size="9" fill="#93c5fd" letter-spacing="3">SELECTED WORK</text>
+  <line x1="144" y1="264" x2="790" y2="264" stroke="#dbeafe" stroke-width="1"/>
+
+  <rect x="0"   y="276" width="386" height="114" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14"  y="294" class="m" font-size="8.5" fill="#2563eb" letter-spacing="1.5">● COMPLETED</text>
+  <text x="14"  y="312" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">Student Response Classifier</text>
+  <text x="14"  y="328" class="m" font-size="10"   fill="#64748b">LLM usage classifier · TF-IDF pipeline</text>
+  <text x="14"  y="342" class="m" font-size="10"   fill="#64748b">8k trials · 1000+ → 33 features</text>
+  <rect x="14"  y="354" width="54" height="14" fill="#dbeafe" rx="1"/><text x="17"  y="364" class="m" font-size="8" fill="#1d4ed8">XGBOOST</text>
+  <rect x="74"  y="354" width="68" height="14" fill="#dbeafe" rx="1"/><text x="77"  y="364" class="m" font-size="8" fill="#1d4ed8">RAND FOREST</text>
+  <rect x="148" y="354" width="26" height="14" fill="#dbeafe" rx="1"/><text x="151" y="364" class="m" font-size="8" fill="#1d4ed8">MLP</text>
+  <rect x="180" y="354" width="36" height="14" fill="#dbeafe" rx="1"/><text x="183" y="364" class="m" font-size="8" fill="#1d4ed8">TF-IDF</text>
+
+  <rect x="394"  y="276" width="396" height="114" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="408"  y="294" class="m" font-size="8.5" fill="#2563eb" letter-spacing="1.5">● COMPLETED</text>
+  <text x="408"  y="312" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">Alzheimer's Progression Forecasting</text>
+  <text x="408"  y="328" class="m" font-size="10"   fill="#64748b">Music · EEG · cognition · PCA + ridge</text>
+  <text x="408"  y="342" class="m" font-size="10"   fill="#64748b">70+ audio · 495 EEG → 15 key features</text>
+  <rect x="408"  y="354" width="34" height="14" fill="#dbeafe" rx="1"/><text x="411"  y="364" class="m" font-size="8" fill="#1d4ed8">RIDGE</text>
+  <rect x="448"  y="354" width="24" height="14" fill="#dbeafe" rx="1"/><text x="451"  y="364" class="m" font-size="8" fill="#1d4ed8">PLS</text>
+  <rect x="478"  y="354" width="26" height="14" fill="#dbeafe" rx="1"/><text x="481"  y="364" class="m" font-size="8" fill="#1d4ed8">EEG</text>
+  <rect x="510"  y="354" width="68" height="14" fill="#dbeafe" rx="1"/><text x="513"  y="364" class="m" font-size="8" fill="#1d4ed8">SCIKIT-LEARN</text>
+
+  <rect x="0"   y="396" width="386" height="108" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14"  y="414" class="m" font-size="8.5" fill="#16a34a" letter-spacing="1.5">● LIVE</text>
+  <text x="14"  y="432" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">Bird Diversity Analysis Platform</text>
+  <text x="14"  y="448" class="m" font-size="10"   fill="#64748b">REST APIs for geospatial ecological data</text>
+  <text x="14"  y="462" class="m" font-size="10"   fill="#64748b">· eBird integration · Django QuerySets</text>
+  <rect x="14"  y="474" width="48" height="14" fill="#dbeafe" rx="1"/><text x="17"  y="484" class="m" font-size="8" fill="#1d4ed8">DJANGO</text>
+  <rect x="68"  y="474" width="52" height="14" fill="#dbeafe" rx="1"/><text x="71"  y="484" class="m" font-size="8" fill="#1d4ed8">REST API</text>
+  <rect x="126" y="474" width="62" height="14" fill="#dbeafe" rx="1"/><text x="129" y="484" class="m" font-size="8" fill="#1d4ed8">GEOSPATIAL</text>
+
+  <rect x="394"  y="396" width="396" height="108" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="408"  y="414" class="m" font-size="8.5" fill="#d97706" letter-spacing="1.5">○ WIP</text>
+  <text x="408"  y="432" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">ML Pipeline System</text>
+  <text x="408"  y="448" class="m" font-size="10"   fill="#64748b">End-to-end: ingestion → preprocess</text>
+  <text x="408"  y="462" class="m" font-size="10"   fill="#64748b">→ train → eval → inference</text>
+  <rect x="408"  y="474" width="50" height="14" fill="#dbeafe" rx="1"/><text x="411"  y="484" class="m" font-size="8" fill="#1d4ed8">PYTORCH</text>
+  <rect x="464"  y="474" width="50" height="14" fill="#dbeafe" rx="1"/><text x="467"  y="484" class="m" font-size="8" fill="#1d4ed8">PIPELINE</text>
+  <rect x="520"  y="474" width="32" height="14" fill="#dbeafe" rx="1"/><text x="523"  y="484" class="m" font-size="8" fill="#1d4ed8">EVAL</text>
+
+  <rect x="0"   y="510" width="386" height="108" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14"  y="528" class="m" font-size="8.5" fill="#d97706" letter-spacing="1.5">○ WIP</text>
+  <text x="14"  y="546" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">ML Inference Scheduling System</text>
+  <text x="14"  y="562" class="m" font-size="10"   fill="#64748b">Request scheduling · batching ·</text>
+  <text x="14"  y="576" class="m" font-size="10"   fill="#64748b">latency vs throughput trade-offs</text>
+  <rect x="14"  y="588" width="50" height="14" fill="#dbeafe" rx="1"/><text x="17"  y="598" class="m" font-size="8" fill="#1d4ed8">SERVING</text>
+  <rect x="70"  y="588" width="54" height="14" fill="#dbeafe" rx="1"/><text x="73"  y="598" class="m" font-size="8" fill="#1d4ed8">BATCHING</text>
+  <rect x="130" y="588" width="46" height="14" fill="#dbeafe" rx="1"/><text x="133" y="598" class="m" font-size="8" fill="#1d4ed8">SCALING</text>
+
+  <rect x="394"  y="510" width="396" height="108" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="408"  y="528" class="m" font-size="8.5" fill="#7c3aed" letter-spacing="1.5">◌ PLANNED</text>
+  <text x="408"  y="546" class="m" font-size="11.5" fill="#0f172a" font-weight="bold">LLM Post-training Project</text>
+  <text x="408"  y="562" class="m" font-size="10"   fill="#64748b">Prompt eval · output quality analysis</text>
+  <text x="408"  y="576" class="m" font-size="10"   fill="#64748b">· fine-tuning experiments</text>
+  <rect x="408"  y="588" width="26" height="14" fill="#dbeafe" rx="1"/><text x="411"  y="598" class="m" font-size="8" fill="#1d4ed8">LLM</text>
+  <rect x="440"  y="588" width="32" height="14" fill="#dbeafe" rx="1"/><text x="443"  y="598" class="m" font-size="8" fill="#1d4ed8">RLHF</text>
+  <rect x="478"  y="588" width="54" height="14" fill="#dbeafe" rx="1"/><text x="481"  y="598" class="m" font-size="8" fill="#1d4ed8">FINETUNE</text>
+</g>
+
+<!-- TECH STACK -->
+<g class="show">
+  <text x="0" y="646" class="m" font-size="9" fill="#93c5fd" letter-spacing="3">TECH STACK</text>
+  <line x1="102" y1="642" x2="790" y2="642" stroke="#dbeafe" stroke-width="1"/>
+
+  <rect x="0"   y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"           x="37"  y="664" width="28" height="28"/>
+  <text x="57"  y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">Python</text>
+
+  <rect x="120" y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"         x="157" y="664" width="28" height="28"/>
+  <text x="177" y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">PyTorch</text>
+
+  <rect x="240" y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"  x="277" y="664" width="28" height="28"/>
+  <text x="297" y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">scikit-learn</text>
+
+  <rect x="360" y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"               x="397" y="664" width="28" height="28"/>
+  <text x="417" y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">Django</text>
+
+  <rect x="480" y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"                 x="517" y="664" width="28" height="28"/>
+  <text x="537" y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">Git</text>
+
+  <rect x="600" y="656" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"             x="637" y="664" width="28" height="28"/>
+  <text x="657" y="706" class="m" font-size="9" fill="#475569" text-anchor="middle">Linux</text>
+
+  <rect x="0"   y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"               x="37"  y="740" width="28" height="28"/>
+  <text x="57"  y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">Java</text>
+
+  <rect x="120" y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"                     x="157" y="740" width="28" height="28"/>
+  <text x="177" y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">C</text>
+
+  <rect x="240" y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"   x="277" y="740" width="28" height="28"/>
+  <text x="297" y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">JavaScript</text>
+
+  <rect x="360" y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"   x="397" y="740" width="28" height="28"/>
+  <text x="417" y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">TypeScript</text>
+
+  <rect x="480" y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"                     x="517" y="740" width="28" height="28"/>
+  <text x="537" y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">R</text>
+
+  <rect x="600" y="732" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"   x="637" y="740" width="28" height="28"/>
+  <text x="657" y="782" class="m" font-size="9" fill="#475569" text-anchor="middle">SQL</text>
+
+  <rect x="0"   y="808" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"             x="37"  y="816" width="28" height="28"/>
+  <text x="57"  y="858" class="m" font-size="9" fill="#475569" text-anchor="middle">HTML</text>
+
+  <rect x="120" y="808" width="114" height="70" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"               x="157" y="816" width="28" height="28"/>
+  <text x="177" y="858" class="m" font-size="9" fill="#475569" text-anchor="middle">CSS</text>
+</g>
+
+<!-- CURRENT FOCUS -->
+<g class="show">
+  <text x="0" y="910" class="m" font-size="9" fill="#93c5fd" letter-spacing="3">CURRENT FOCUS</text>
+  <line x1="148" y1="906" x2="790" y2="906" stroke="#dbeafe" stroke-width="1"/>
+  <rect x="0" y="918" width="790" height="32" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14" y="938" class="m" font-size="11" fill="#93c5fd">01</text>
+  <text x="44" y="938" class="m" font-size="11" fill="#334155">ML systems — training, inference, pipeline design</text>
+  <rect x="0" y="951" width="790" height="32" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14" y="971" class="m" font-size="11" fill="#93c5fd">02</text>
+  <text x="44" y="971" class="m" font-size="11" fill="#334155">LLM post-training · evaluation · optimization</text>
+  <rect x="0" y="984" width="790" height="32" fill="#fafcff" stroke="#dbeafe" stroke-width="1"/>
+  <text x="14" y="1004" class="m" font-size="11" fill="#93c5fd">03</text>
+  <text x="44" y="1004" class="m" font-size="11" fill="#334155">Reliable and scalable ML workflows</text>
+</g>
+
+<!-- FOOTER -->
+<g class="show">
+  <line x1="0" y1="1034" x2="790" y2="1034" stroke="#dbeafe" stroke-width="1"/>
+  <rect x="0" y="1046" width="108" height="26" fill="none" stroke="#bfdbfe" stroke-width="1"/>
+  <text x="54" y="1063" class="m" font-size="10" fill="#1d4ed8" text-anchor="middle" letter-spacing="1">↗ LINKEDIN</text>
+  <text x="788" y="1063" class="m" font-size="10" fill="#93c5fd" text-anchor="end">LL333111 · github.com</text>
+</g>
+
+</svg>
