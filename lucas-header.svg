@@ -1,0 +1,26 @@
+<svg width="800" height="120" viewBox="0 0 800 120" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.m{font-family:'Courier New',Courier,monospace;}
+.pulse{animation:p 1.4s ease-in-out infinite;}
+@keyframes p{0%,100%{opacity:1;}50%{opacity:.2;}}
+</style>
+</defs>
+<rect width="800" height="120" fill="#ffffff"/>
+
+<!-- CS MATH STAT — extra wide to never clip -->
+<rect x="0" y="22" width="180" height="22" fill="#dbeafe"/>
+<rect x="0" y="22" width="5" height="22" fill="#2563eb"/>
+<text x="16" y="37" class="m" font-size="10" fill="#2563eb" letter-spacing="2.5">CS · MATH · STAT</text>
+
+<!-- open to opportunities -->
+<rect x="570" y="20" width="218" height="26" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+<circle cx="587" cy="33" r="4" fill="#2563eb" class="pulse"/>
+<text x="599" y="37" class="m" font-size="10" fill="#1d4ed8" letter-spacing="0.3">open to opportunities</text>
+
+<!-- name -->
+<text x="0" y="84" class="m" font-size="42" fill="#0a0e1a" letter-spacing="-1.5" font-weight="bold">Lucas Liu</text>
+
+<!-- subtitle -->
+<text x="2" y="110" class="m" font-size="12" fill="#64748b" letter-spacing="0.3">University of Toronto  ·  third year</text>
+</svg>
