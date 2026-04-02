@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Lucas Liu
 
-🎓 Third-year Computer Science, Mathematics & Statistics student @ University of Toronto • 
+🎓 Third-year Computer Science, Mathematics & Statistics student @ University of Toronto                                        
 💻 ML Systems • 
 🚀 Interested in LLM post-training 
 
