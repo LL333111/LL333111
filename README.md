@@ -1,4 +1,10 @@
-# ![Lucas Liu](lucas-readme-header.svg)
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/profile-mobile.svg">
+  <img src="./lucas-readme-header.svg" width="100%" alt="Lucas Liu · University of Toronto · LLM training, agent evaluation, and search. Project links and experiment notes follow.">
+</picture>
+
+<details>
+<summary>Project links and experiment notes</summary>
 
 I'm a computer science student at the University of Toronto. I study how coding agents recover from failed patches and how much training time it takes to improve a language model. My undergraduate research focuses on search and retrieval.
 
@@ -22,4 +28,8 @@ How quickly can a 124M-parameter transformer reach the same validation loss? On 
 - [Lucky Aces](https://github.com/LL333111/Full-Stack-Rewards--Community-Web-Platform) is a rewards app built with React and Express, with live notifications over Socket.IO.
 - [Student Response Classifier](https://github.com/LL333111/Student-Response-Classifier) uses survey ratings and written feedback to predict whether a student was evaluating ChatGPT, Claude, or Gemini.
 
-I'm open to opportunities in machine learning and software engineering. [Connect on LinkedIn](https://www.linkedin.com/in/lucas-liu-6a83162a0/).
+**Tools** · Python, PyTorch, Transformers, scikit-learn, XGBoost, FastAPI, Docker, Linux, Git, React, SQLite.
+
+</details>
+
+[Connect on LinkedIn](https://www.linkedin.com/in/lucas-liu-6a83162a0/)
