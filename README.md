@@ -1,35 +1,50 @@
+<p>
 <picture>
   <source media="(max-width: 640px)" srcset="./assets/profile-mobile.svg">
-  <img src="./lucas-readme-header.svg" width="100%" alt="Lucas Liu · University of Toronto · LLM training, agent evaluation, and search. Project links and experiment notes follow.">
+  <img src="./lucas-readme-header.svg" width="100%" alt="Lucas Liu. Computer science at the University of Toronto. LLM post-training, coding agents, and search.">
 </picture>
+</p>
 
-<details>
-<summary>Project links and experiment notes</summary>
+[Training](https://github.com/LL333111/transformer-training-scaling) &middot; [Agents](https://github.com/LL333111/ContextRepair) &middot; [Post-training](https://github.com/LL333111/rlvr-posttraining) &middot; [LinkedIn](https://www.linkedin.com/in/lucas-liu-6a83162a0/)
 
-I'm a computer science student at the University of Toronto. I study how coding agents recover from failed patches and how much training time it takes to improve a language model. My undergraduate research focuses on search and retrieval.
+<p>
+<a href="https://github.com/LL333111/transformer-training-scaling">
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/scaling-study-mobile.svg">
+  <img src="./assets/scaling-study.svg" width="100%" alt="Transformer training and scaling. Time to the same validation loss on L40S GPUs: manual attention, 624 s on one GPU. SDPA, 205 s on one GPU. SDPA with DDP, 107 s on two GPUs. Open the experiment.">
+</picture>
+</a>
+</p>
 
-## Selected experiments
+<p>
+<a href="https://github.com/LL333111/ContextRepair">
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/agent-recovery-mobile.svg">
+  <img src="./assets/agent-recovery.svg" width="100%" alt="ContextRepair. Failure-guided retries resolved 22 of 40 held-out SWE-bench Verified tasks, matching a single attempt. Open the repository.">
+</picture>
+</a>
+</p>
 
-### [ContextRepair](https://github.com/LL333111/ContextRepair)
-
-Can a failed test tell a coding agent which files to read next? I built a retry loop that uses the failure trace to pick fresh repository context. On 40 held-out SWE-bench Verified tasks, it resolved 22, matching a single attempt. An independent retry resolved 21.
-
-### [Compute-matched LLM post-training](https://github.com/LL333111/rlvr-posttraining)
-
-I gave two copies of the same Qwen checkpoint about 1.38 H100 GPU-hours each. On GSM8K, verifier-guided reinforcement learning (GRPO) reached **55.6%** exact match and continued supervised fine-tuning reached **48.4%**. In this single-seed run, the original model still scored highest at 66.9%.
-
-### [Transformer training and scaling](https://github.com/LL333111/transformer-training-scaling)
-
-How quickly can a 124M-parameter transformer reach the same validation loss? On one L40S GPU, switching from manual attention to PyTorch's scaled dot-product attention cut training time to that target from **624 to 205 seconds**. With two GPUs and the same global batch size, it took **107 seconds**.
+<p>
+<a href="https://github.com/LL333111/rlvr-posttraining">
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/post-training-mobile.svg">
+  <img src="./assets/post-training.svg" width="100%" alt="Compute-matched LLM post-training. In one seed on GSM8K, GRPO outscored continued SFT by 7.1 percentage points at about 1.38 H100 GPU-hours each. The original model scored highest. Open the repository.">
+</picture>
+</a>
+</p>
 
 ## Other projects
 
-- [WatchAgent](https://github.com/LL333111/watchagent) tracks hourly weather in three Canadian cities and flags changes such as the onset of rain.
-- [Lucky Aces](https://github.com/LL333111/Full-Stack-Rewards--Community-Web-Platform) is a rewards app built with React and Express, with live notifications over Socket.IO.
-- [Student Response Classifier](https://github.com/LL333111/Student-Response-Classifier) uses survey ratings and written feedback to predict whether a student was evaluating ChatGPT, Claude, or Gemini.
+- **[WatchAgent](https://github.com/LL333111/watchagent)** tracks hourly weather across three Canadian cities and flags transitions such as the onset of rain.
+- **[Lucky Aces](https://github.com/LL333111/Full-Stack-Rewards--Community-Web-Platform)** delivers live reward notifications through a React and Express app.
+- **[Student Response Classifier](https://github.com/LL333111/Student-Response-Classifier)** uses survey ratings and comments to identify which LLM a student evaluated.
 
-**Tools** · Python, PyTorch, Transformers, scikit-learn, XGBoost, FastAPI, Docker, Linux, Git, React, SQLite.
-
-</details>
-
-[Connect on LinkedIn](https://www.linkedin.com/in/lucas-liu-6a83162a0/)
+<p>
+<a href="https://www.linkedin.com/in/lucas-liu-6a83162a0/">
+<picture>
+  <source media="(max-width: 640px)" srcset="./assets/toolkit-mobile.svg">
+  <img src="./assets/toolkit.svg" width="100%" alt="Open to opportunities. Connect with Lucas on LinkedIn. Tools include Python, PyTorch, Transformers, scikit-learn, XGBoost, FastAPI, Docker, Linux, Git, React, and SQLite.">
+</picture>
+</a>
+</p>
