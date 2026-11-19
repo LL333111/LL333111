@@ -30,11 +30,12 @@
 
 ### Stack
 
-| | |
-|:--|:--|
-| **Training** | PyTorch · Transformers · TRL · PEFT / LoRA |
-| **Post-training** | GRPO · SFT · rejection-sampling SFT · DPO |
-| **Serving** | vLLM · llama.cpp · FP8 / GPTQ quantization |
-| **Data & infra** | Python · SQL · FAISS · Docker · Linux |
+<table>
+<tr><td><b>Languages</b></td><td>Python · C · JavaScript · SQL · Bash</td></tr>
+<tr><td><b>Training</b></td><td>PyTorch · Transformers · TRL · PEFT / LoRA</td></tr>
+<tr><td><b>Post-training</b></td><td>GRPO · SFT · rejection-sampling SFT · DPO</td></tr>
+<tr><td><b>Serving</b></td><td>vLLM · llama.cpp · FP8 / GPTQ quantization</td></tr>
+<tr><td><b>Data & infra</b></td><td>FAISS · Docker · Linux · Git</td></tr>
+</table>
 
 [LinkedIn](https://www.linkedin.com/in/lucas-liu-6a83162a0/)
