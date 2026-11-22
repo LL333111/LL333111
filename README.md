@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="hero-v2-dark.svg">
-  <img alt="Lucas Liu, open to opportunities" src="hero-v2-light.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="hero-v3-dark.svg">
+  <img alt="Lucas Liu, open to opportunities" src="hero-v3-light.svg" width="100%">
 </picture>
 
 ### Post-training
