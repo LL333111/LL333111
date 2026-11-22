@@ -3,12 +3,6 @@
   <img alt="Lucas Liu, open to opportunities" src="hero-v2-light.svg" width="100%">
 </picture>
 
-### Research experiments
-
-| Project | Description |
-|:--|:--|
-| [causalpfn-large-tables](https://github.com/LL333111/causalpfn-large-tables) | Why does CausalPFN drop on full-size uplift tables? Most of its ranking comes from a small weak learner; giving that estimate to the model as an input column lifts full-X5 Qini **0.607 → 0.790**, and is not worse on any of 8 tables |
-
 ### Post-training
 
 | Project | Description |
@@ -33,6 +27,12 @@
 |:--|:--|
 | [ContextRepair](https://github.com/LL333111/ContextRepair) | Can coding agents recover from failed attempts on SWE-bench Verified? An honest negative result (**22/40** either way) |
 | [ehr-forecast-final](https://github.com/LL333111/ehr-forecast-final) | Forecast five-year diagnoses from electronic health records |
+
+### Research experiments
+
+| Project | Description |
+|:--|:--|
+| [causalpfn-large-tables](https://github.com/LL333111/causalpfn-large-tables) | Why does CausalPFN drop on full-size uplift tables? Most of its ranking comes from a small weak learner; giving that estimate to the model as an input column lifts full-X5 Qini **0.607 → 0.790**, and is not worse on any of 8 tables |
 
 ### Stack
 
